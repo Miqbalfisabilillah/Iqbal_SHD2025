@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikih Kepemimpinan Islam - E-Book</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Arial', sans-serif; }
+        body { display: flex; flex-direction: column; height: 100vh; background-color: #1a1510; color: #f4efe9; }
+        
+        /* Navbar & Dropdown Styling */
+        header { background-color: #2a2015; border-bottom: 2px solid #d4af37; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 100; }
+        .logo { font-size: 1.2rem; font-weight: bold; color: #d4af37; text-transform: uppercase; letter-spacing: 1px; }
+        nav { display: flex; gap: 15px; }
+        
+        .dropdown { position: relative; display: inline-block; }
+        .dropbtn { background-color: #3d2f20; color: #f4efe9; padding: 10px 15px; font-size: 14px; border: 1px solid #d4af37; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.3s; }
+        .dropbtn:hover { background-color: #d4af37; color: #1a1510; }
+        
+        .dropdown-content { display: none; position: absolute; right: 0; background-color: #2a2015; min-width: 280px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); border: 1px solid #d4af37; border-radius: 4px; max-height: 500px; overflow-y: auto; z-index: 1; }
+        .dropdown-content .nav-header { background-color: #3d2f20; color: #d4af37; padding: 8px 12px; font-size: 12px; font-weight: bold; text-transform: uppercase; border-bottom: 1px solid #4a3b29; border-top: 1px solid #4a3b29; }
+        .dropdown-content .nav-header:first-child { border-top: none; }
+        .dropdown-content a { color: #f4efe9; padding: 10px 16px; text-decoration: none; display: block; font-size: 13px; border-bottom: 1px solid #3d2f20; transition: 0.2s; }
+        .dropdown-content a:hover { background-color: #d4af37; color: #1a1510; padding-left: 20px; }
+        .dropdown-content .sub-item { padding-left: 28px; font-size: 12.5px; color: #e5dac9; }
+        
+        .dropdown:hover .dropdown-content { display: block; }
+        .home-btn { background-color: transparent; border: 1px solid #d4af37; color: #d4af37; padding: 10px 15px; border-radius: 4px; text-decoration: none; font-size: 14px; transition: 0.3s; }
+        .home-btn:hover { background-color: #d4af37; color: #1a1510; }
+
+        /* Iframe Container */
+        .iframe-container { flex: 1; width: 100%; height: 100%; background: #fff; position: relative; }
+        iframe { width: 100%; height: 100%; border: none; display: block; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Fikih Kepemimpinan Islam</div>
+        <nav>
+            <a href="cover.html" target="content-frame" class="home-btn">🏠 Beranda</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">E-Book Fikih ▾</button>
+                <div class="dropdown-content">
+                    <a href="kata_pengantar.html" target="content-frame">📄 Kata Pengantar</a>
+                    
+                    <div class="nav-header">Bab I: Musyawarah & Kepemimpinan</div>
+                    <a href="bab1_a.html" target="content-frame" class="sub-item">a. Musyawarah Nabi dalam Publik</a>
+                    <a href="bab1_b.html" target="content-frame" class="sub-item">b. Batas Ketaatan Pemimpin</a>
+                    <a href="bab1_c.html" target="content-frame" class="sub-item">c. Tanggung Jawab & Akuntabilitas</a>
+                    <a href="bab1_d.html" target="content-frame" class="sub-item">d. Kriteria Pemimpin Ideal</a>
+                    <a href="bab1_e.html" target="content-frame" class="sub-item">e. Kepemimpinan yang Lembut</a>
+                    
+                    <div class="nav-header">Bab II: Etika & Kontrol Kekuasaan</div>
+                    <a href="bab2_a.html" target="content-frame" class="sub-item">a. Nasihat sebagai Pilar Etika</a>
+                    <a href="bab2_b.html" target="content-frame" class="sub-item">b. Mengkritik Penguasa Zalim</a>
+                    <a href="bab2_c.html" target="content-frame" class="sub-item">c. Larangan Pengkhianatan Amanah</a>
+                    <a href="bab2_d.html" target="content-frame" class="sub-item">d. Kewajiban Melayani Rakyat</a>
+                    <a href="bab2_e.html" target="content-frame" class="sub-item">e. Larangan Ambisi Jabatan</a>
+                    
+                    <div class="nav-header">Bab III: Persatuan & Stabilitas</div>
+                    <a href="bab3_a.html" target="content-frame" class="sub-item">a. Prinsip Kebersamaan (Al-Jamā'ah)</a>
+                    <a href="bab3_b.html" target="content-frame" class="sub-item">b. Kesabaran Politik & Persatuan</a>
+                    <a href="bab3_c.html" target="content-frame" class="sub-item">c. Jabatan bagi yang Tidak Kompeten</a>
+                    <a href="bab3_d.html" target="content-frame" class="sub-item">d. Otoritas Kolektif & Konsensus</a>
+                    <a href="bab3_e.html" target="content-frame" class="sub-item">e. Sikap terhadap Pemimpin Zalim</a>
+                    
+                    <div class="nav-header">Informasi Akhir</div>
+                    <a href="daftar_pustaka.html" target="content-frame">📚 Daftar Pustaka</a>
+                    <a href="tentang_editor.html" target="content-frame">🧑‍💻 Tentang Editor</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Review Website ▾</button>
+                <div class="dropdown-content">
+                    <div class="nav-header">Daftar Review PDF</div>
+                    <a href="https://drive.google.com/file/d/1u5kKunMyCr8xTIsrndjfgy6_z7r4DYXM/view?usp=sharing" target="content-frame">📕 Review website - Bagian 1 (10%)</a>
+                    <a href="https://drive.google.com/file/d/18I-zDd06fG_YnUmGl8a0kTmA7SGTHXh3/view?usp=sharing" target="content-frame">📕 Review website - Bagian 2 (25%)</a>
+                    <a href="https://drive.google.com/file/d/1HYIA5MW1Yyu4LeKeI-ZGJCpvS9jjq-H_/view?usp=sharing" target="content-frame">📕 Review website - Bagian 3 (40%)</a>
+                    <a href="https://drive.google.com/file/d/1SH8AeZXDgAGUe83hjIzHpp0N9ojsnBXy/view?usp=sharing" target="content-frame">📕 Review ebook - Bagian 4 (55%)</a>
+                    <a href="https://drive.google.com/file/d/10TRVQODf3WFRn-k2J3986rwebhJTxTv7/view?usp=sharing" target="content-frame">📕 Review aplikasiandroid - Bagian 5 (70%)</a>
+                    <a href="https://drive.google.com/file/d/1vNVfKCcnG-aBO5Jf-caR0t7VuxcZbejE/view?usp=sharing" target="content-frame">📕 Review aplikasidekstop - Bagian 6 (85%)</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="iframe-container">
+        <iframe src="cover.html" name="content-frame"></iframe>
+    </div>
+
+</body>
+</html>
